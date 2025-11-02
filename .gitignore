@@ -1,0 +1,10 @@
+# Ignore Microsoft Word documents per request
+*.docx
+
+# Python artifacts
+__pycache__/
+*.pyc
+
+# Editor / environment
+.vscode/
+.env
