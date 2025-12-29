@@ -1,10 +1,110 @@
-# Ignore Microsoft Word documents per request
-*.docx
+# PyWallet .gitignore
+# Generated for Streamlit Cloud deployment
 
-# Python artifacts
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# Editor / environment
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/logs/
+
+# Environment Variables
 .env
+.env.local
+.env.*.local
+
+# Data Files (Always exclude user data)
+pywallet/data/
+pywallet/data/expenses.json
+pywallet/data/users.json
+pywallet/data/session.json
+pywallet/data/income.json
+pywallet/data/recurring_expenses.json
+pywallet/data/savings_goals.json
+pywallet/data/Freelance_settings.json
+
+# Encrypted & Backups (Always exclude)
+data/encrypted/
+data/backups/
+security/session.json
+security/users.json
+pywallet/security/session.json
+pywallet/security/users.json
+pywallet/data/encrypted/
+pywallet/data/backups/
+
+# Encryption Keys (CRITICAL - NEVER COMMIT)
+data/encryption.key
+pywallet/data/encryption.key
+*.key
+*.pem
+
+# Generated Files
+*.csv
+charts/*.png
+logs/
+*.log
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
+
+# Archive
+archive/
+
+# OS
+Thumbs.db
+.AppleDouble
+.LSOverride
+*.bak
+*.tmp
+
+# IDE Cache
+.pylint.d/
+.ruff_cache/
+
+# Project specific
+pywallet-streamlit/  # Deprecated version
+web_interface/       # Deprecated version
