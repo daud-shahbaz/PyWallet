@@ -116,5 +116,5 @@ streamlit run app/PyWallet.py
 2. Visit https://share.streamlit.io
 3. Deploy from GitHub repo
 
-Made by Daud | Thank your for using PyWallet!
+Made by Daud | Thank you for using PyWallet!
 
