@@ -38,6 +38,12 @@ env/
 *.swp
 *.swo
 *~
+
+# Development Containers (not needed)
+.devcontainer/
+
+# Runtime (not needed)
+runtime.txt
 .DS_Store
 .project
 .pydevproject
